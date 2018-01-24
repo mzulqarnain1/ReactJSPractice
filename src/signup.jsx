@@ -1,5 +1,4 @@
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
-import AppBar from "material-ui/AppBar";
 import RaisedButton from "material-ui/RaisedButton";
 import TextField from "material-ui/TextField";
 import React from "react";
@@ -23,9 +22,6 @@ class SignUp extends React.Component {
             <div>
                 <MuiThemeProvider>
                     <div>
-                        <AppBar
-                            title="Register"
-                        />
                         <TextField
                             hintText="Enter Username"
                             floatingLabelText="Username"

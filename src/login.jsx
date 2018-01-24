@@ -21,14 +21,12 @@ class Login extends React.Component {
             <div>
                 <MuiThemeProvider>
                     <div>
-                        <AppBar
-                            title="Login"
-                        />
                         <TextField
                             hintText="Enter your Username"
                             floatingLabelText="Username"
                             onChange={(event, newValue) => this.setState({username: newValue})}
                         />
+                        <p>{this.state.username}</p>
                         <br/>
                         <TextField
                             type="password"
@@ -37,7 +35,7 @@ class Login extends React.Component {
                             onChange={(event, newValue) => this.setState({password: newValue})}
                         />
                         <br/>
-                        <RaisedButton label="Submit" primary={true} style={style}
+                        <RaisedButton label="Login" primary={true} style={style}
                                       onClick={(event) => this.handleClick(event)}/>
                     </div>
                 </MuiThemeProvider>
